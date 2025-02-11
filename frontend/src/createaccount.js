@@ -127,7 +127,7 @@ function CreateAccount() {
         }
 
         try {
-            const response = await axios.post("http://localhost:8000/createaccount", { 
+            const response = await axios.post("https://banking-app-mern.onrender.com/createaccount", { 
                 name, email, phone, age, gender, password, usertype, secretkey 
             });
             console.log(response.data);
