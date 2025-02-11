@@ -15,7 +15,7 @@ function Login() {
         console.log("Form submitted");
 
         try {
-            const response = await axios.post("http://localhost:8000/login", { email, password });
+            const response = await axios.post("https://banking-app-mern.onrender.com/login", { email, password });
             console.log("Response received:", response);
             if (response.data.status === "ok") {
                 localStorage.setItem("token", response.data.token);
