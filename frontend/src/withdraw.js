@@ -14,7 +14,7 @@ export default function Withdraw() {
     const fetchBalance = async () => {
       setLoading(true);
       try {
-        const response = await axios.post("http://localhost:8000/user-action", { token });
+        const response = await axios.post("https://banking-app-mern.onrender.com/user-action", { token });
         setUserBalance(response.data.balance);
       } catch (error) {
         setError(`Error fetching balance: ${error.message}`);
@@ -64,7 +64,7 @@ export default function Withdraw() {
 
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8000/user-action", { token, amount: amountValue });
+      const response = await axios.post("https://banking-app-mern.onrender.com/user-action", { token, amount: amountValue });
       setSuccessMessage(`Successfully withdrew $${amountValue}. Current balance: $${response.data.data}`);
       setUserBalance(response.data.data);
       setError("");
