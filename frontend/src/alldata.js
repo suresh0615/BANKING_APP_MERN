@@ -5,7 +5,7 @@ export default function Adminhome({userData}) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/alluser", {
+    fetch(https://banking-app-mern.onrender.com/alluser", {
       method: "GET",
     })
     .then((res) => res.json())
@@ -16,7 +16,7 @@ export default function Adminhome({userData}) {
   }, []);
 
   const deleteUser = (id) => {
-    fetch(`http://localhost:8000/deleteuser/${id}`, {
+    fetch(`https://banking-app-mern.onrender.com/deleteuser/${id}`, {
       method: "DELETE",
     })
     .then((res) => res.json())
