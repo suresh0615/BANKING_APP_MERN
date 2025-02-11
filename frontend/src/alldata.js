@@ -5,7 +5,7 @@ export default function Adminhome({userData}) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch(https://banking-app-mern.onrender.com/alluser", {
+    fetch("https://banking-app-mern.onrender.com/alluser", {
       method: "GET",
     })
     .then((res) => res.json())
