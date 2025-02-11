@@ -11,7 +11,7 @@ export default function UserDetails() {
 
   useEffect(() => {
     axios
-      .post("http://localhost:8000/userdetails", { token })
+      .post("https://banking-app-mern.onrender.com/userdetails", { token })
       .then((res) => {
         console.log(res.data);
         
