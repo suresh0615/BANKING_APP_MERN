@@ -26,7 +26,7 @@ export default function Deposite1() {
         }
 
         axios
-            .post("http://localhost:8000/deposit", { token, amount })
+            .post("https://banking-app-mern.onrender.com/deposit", { token, amount })
             .then((res) => {
                 if (res.data.status === "ok") {
                     setSuccessMessage(`Successfully deposited $${amountValue}. Current balance: $${res.data.data}`);
