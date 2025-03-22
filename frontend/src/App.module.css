@@ -1,0 +1,263 @@
+body{
+  background-image: url(lifestyle-credit-payment-using-shopping.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh ;
+  
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* homepage */
+.homepage{
+  background-image: url(stacks-metallic-coins-symbolize-financial-success-generated-by-ai.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 90vh ;
+}
+
+.marquee{
+  font-size: 3rem;
+  padding-top: 100px;
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+}
+span{
+  color:rgb(50, 120, 123);
+}
+
+.container {
+  width: 400px; 
+  margin: 0 auto; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #c3bfbf;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-top: 150px;
+  margin-left: 50%;
+}
+.form h2{
+  color: #ffffff;
+}
+input {
+  width: 300px; 
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  width: 200px; 
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.1); 
+  background-color: #0056b3;
+  color: white;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.form1{
+  align-items: center; 
+  padding-top: 150px;
+  margin-left: 50%;
+  padding-left: 200px;
+  width: 240px; 
+  margin: 0 auto; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #c3bfbf;
+}
+.link{
+  display: flex;
+  width: 200px; 
+  padding: 10px;
+  background-color: #2a6592;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.link:hover{
+   background-color: #ddd;
+  color: black;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* Withdraw and Deposit */
+.withdraw {
+  animation: bounce 2s infinite;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 200px;
+  flex-direction: column;
+  background-color: #f0f0f0; 
+  padding: 20px; 
+  border-radius: 10px; 
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10px;
+}
+
+.withdraws{
+  background-color: #ddd;
+}
+.withdraw input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 200px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.withdraws {
+  text-align: center;
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+.balance-message {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 2%;
+}
+
+.error-message {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+.success{
+  margin-bottom:15%;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+  margin-left: 24%;
+  padding-top: 5px;
+  height: 100px;
+}
+.success p {
+  font-size: large;
+  background-color: #333;
+  color: #fff;
+  
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* General mobile styles */
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(stacks-metallic-coins-symbolize-financial-success-generated-by-ai.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    color: #f4f4f4; /* Light text for contrast */
+    padding: 0;
+    margin: 0;
+  }
+
+  .container, .form1 {
+    width: 90%; /* Full width for mobile */
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #2a6592; /* Dark background for better contrast */
+  }
+
+  .form h2, .marquee {
+    font-size: 1.8rem; /* Smaller font size for mobile */
+    text-align: center; /* Center the heading */
+    color: #f4f4f4; /* Lighter heading text */
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4; /* Light background for input boxes */
+    color: #333; /* Dark text for inputs */
+  }
+
+  button, .btn, .link {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #007bff; /* Consistent button color */
+    color: #fff; /* Light text for buttons */
+  }
+
+  button:hover, .btn:hover, .link:hover {
+    background-color: #0056b3;
+    color: #fff; /* Retain white text on hover */
+  }
+
+  /* Responsive menu icon */
+  .menu-icon {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .menu-links {
+    display: none;
+  }
+  
+  .withdraw {
+    width: 90%; /* Full width for mobile */
+    margin: 20px auto;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .withdraw input {
+    width: 100%;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  .withdraws, .error-message, .balance-message {
+    font-size: 1.2rem;
+    color: red; /* Highlighted text */
+  }
+}
+
